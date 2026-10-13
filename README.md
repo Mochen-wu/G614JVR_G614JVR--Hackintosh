@@ -87,7 +87,7 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 
 | 设置项 | 目标值 | 说明 |
 | ---- | ---- | ---- |
-| **VMD（Volume Management Device）** | **关闭 / Disabled** | ⚠️ **最重要**。HM770 芯片组默认开 VMD，macOS 无法直接识别 VMD 下的 NVMe 硬盘，关闭后 AHCI 模式才能识别 SSD |
+| **VMD（Volume Management Device）** | **关闭 / Disabled** | ⚠️ **最重要**。主板芯片组默认开 VMD，macOS 无法直接识别 VMD 下的 NVMe 硬盘，关闭后 AHCI 模式才能识别 SSD |
 | **Secure Boot（安全启动）** | **关闭 / Disabled** | macOS 安装盘未经微软签名，开启会被拒绝启动。华硕：Boot → Secure Boot → OS Type 选 `Other OS` |
 | **Above 4G Decoding** | **开启 / Enabled** | NullMoth NVIDIA 驱动硬性要求，将显卡完整内存映射到 4GB 以上地址空间 |
 
