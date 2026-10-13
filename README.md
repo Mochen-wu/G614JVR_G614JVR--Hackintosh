@@ -4,7 +4,7 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 
 > 适用机型：ASUS ROG STRIX G16 G614JVR_G614JVR（枪神8） 平台：Raptor Lake-HX（13/14 代酷睿 HX） CPU：英特尔 Core i9-14900HX
 >
->  <span style="color:#3b82f6">💡 替代方案建议：可尝试使用雷电4接口外接AMD免驱独立显卡运行黑苹果。雷电4协议本身兼容性较好，理论上可行性较高；本人暂无雷电相关外设，因此该方案未经过实际测试，仅供参考。</span>
+<span style="color:#3b82f6">💡 替代方案建议：可尝试使用雷电4接口外接AMD免驱独立显卡运行黑苹果。雷电4协议本身兼容性较好，理论上可行性较高；本人暂无雷电相关外设，因此该方案未经过实际测试，仅供参考。</span>
 > 
 > GPU：NVIDIA GeForce RTX 4060笔记本 + Intel UHD 显卡（核显）  
 > 
