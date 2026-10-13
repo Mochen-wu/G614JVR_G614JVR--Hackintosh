@@ -60,7 +60,7 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 | 无线网卡 | Intel 6E AX211 | ✅ | AirportItlwm / itlwm（二选一）+ 蓝牙三件套 （型号为6E的网卡，可以使用itlwm+HeliPort来驱动，若想原生驱动，请更换 intel wifi 6 AX211 或 其他的支持网卡，详见此链接：https://openintelwireless.github.io/itlwm/Compat.html|
 | 蓝牙 | Intel（AX211 自带） | ✅  |
 | 硬盘 | NVMe SSD（Windows + macOS 分盘） | ✅  |
-| 触摸板 / 键盘 | ⚠️ | 建议禁用内置键盘，使用外接键盘，内置键盘对于黑苹果有冲突，容易重置或刷新屏幕，触摸板暂时无法驱动 |
+| 触摸板 / 键盘 | ⚠️| ⚠️ | 建议禁用内置键盘，使用外接键盘，内置键盘对于黑苹果有冲突，容易重置或刷新屏幕，触摸板暂时无法驱动 |
 | 电池 | 板载 | ✅ |  |
 
 ---
@@ -71,7 +71,7 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 | ---- | ---- |
 | macOS | Sequoia 15.8 |
 | OpenCore | 0.9.x / 1.0.x（以仓库内 EFI 为准） |
-| 模拟机型（SMBIOS） | MacBookPro16,2（仅供参考，以实际为准。可能使用16.2或16.4，本人建议使用16.2） |
+| 模拟机型（SMBIOS） | MacBookPro16,2（仅供参考，以实际为准。可能使用16.2或16.4，本人建议使用16.4） |
 | 引导模式 | 纯 UEFI
 
 > SMBIOS 中的 Serial / MLB / ROM 请自行生成自己的值，**不要直接使用他人序列号**，否则 iMessage / FaceTime 可能无法使用。
