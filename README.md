@@ -24,6 +24,17 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 
 
 
+## 📸 效果展示
+<div align="center">
+  <img src="预览图/1.jpg" width="45%" >
+  <img src="预览图/2.png" width="45%" >
+  <img src="预览图/3.jpg" width="45%" >
+  <img src="预览图/4.jpg" width="45%" >
+  <img src="预览图/5.png" width="45%" >
+  <img src="预览图/6.jpg" width="45%" >
+  <img src="预览图/7.png" width="45%" >
+  <img src="预览图/8.jpg" width="45%" >
+
 
 
 
