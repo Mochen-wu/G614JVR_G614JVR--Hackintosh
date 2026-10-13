@@ -107,18 +107,6 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 ### 其他提示
 - **BitLocker（Windows 磁盘加密）**：如果 Windows 开启了 BitLocker，进 BIOS 修改安全启动**之前**，先暂停 BitLocker 或保存恢复密钥（`设置 → 隐私和安全 → 设备加密`，或 `aka.ms/myrecoverykey`），否则改完安全启动后 Windows 会强制要求输入恢复密钥。
 
-
-- 结构参考：
-
-```
-├── EFI/
-│   └── OC/
-└── com.apple.recovery.boot/
-    ├── BaseSystem.dmg
-    └── BaseSystem.chunklist
-```
-
-
 ---
 
 ## 鸣谢
