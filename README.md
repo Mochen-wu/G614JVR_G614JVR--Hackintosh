@@ -116,7 +116,7 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 - NullMoth 社区（NVIDIA Metal 实验驱动）：<https://github.com/nullmoth/nvidia-macos-driver>
 - 生成EFI的工具来自 NullMoth 1401 Windows工具：<https://github.com/nullmoth/1401>
 - itlwm 无线网卡驱动：<https://github.com/laobamac/itlwm/releases>
-- [极光呆呆脑](https://github.com/bilijp153)
+- [极光呆呆脑](https://github.com/bilijp153) 协助并完善此EFI
 - https://dortania.github.io/- 技术支持与知识库
 - https://github.com/acidanthera- 提供核心驱动开发
 - 本文章大致结构由**豆包姐姐Ai工具**生成
