@@ -3,6 +3,8 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 # ROG Strix G16 G614JVR（枪神8）黑苹果 EFI
 
 > 适用机型：ASUS ROG STRIX G16 G614JVR_G614JVR（枪神8） 平台：Raptor Lake-HX（13/14 代酷睿 HX） CPU：英特尔 Core i9-14900HX
+>
+>  <span style="color:#3b82f6">💡 替代方案建议：可尝试使用雷电4接口外接AMD免驱独立显卡运行黑苹果。雷电4协议本身兼容性较好，理论上可行性较高；本人暂无雷电相关外设，因此该方案未经过实际测试，仅供参考。</span>
 > 
 > GPU：NVIDIA GeForce RTX 4060笔记本 + Intel UHD 显卡（核显）  
 > 
@@ -12,16 +14,14 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 > 
 > 引导：OpenCore
 > 
-> 显卡方案：NullMoth（实验性 NVIDIA Metal 驱动）链接：https://github.com/nullmoth/nvidia-macos-driver
+> <span style="color:red">⚠️ 对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。</span>
 >
-> ⚠️对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。
-> 
-> ⚠️对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。   
-> 
-> ⚠️对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。
-> 
+> <span style="color:red">⚠️ 对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。</span>
 >
-> **重要事情说三遍！！！重要事情说三遍！！！重要事情说三遍！！！**
+> <span style="color:red">⚠️ 对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。</span>
+>
+> <span style="color:red">**重要事情说三遍！！！重要事情说三遍！！！重要事情说三遍！！！**</span>
+
 
 
 
@@ -57,10 +57,10 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 | 独显 | NVIDIA GeForce RTX 4060 Laptop | ⚠️ | NullMoth 实验性 Metal 驱动（暂时不建议使用，谨慎使用） |
 | 声卡 | 板载 Realtek（需查具体型号） | ⚠️ | 尚未完善 |
 | 有线网卡 | 板载（视型号） | ✅ | RealtekRTL8111  |
-| 无线网卡 | Intel 6E AX211 | ✅ | AirportItlwm / itlwm（二选一）+ 蓝牙三件套 （型号为6E的网卡，可以使用itlwm+HeliPort来驱动，若想原生驱动，请更换 intel wifi 6 AX211 或 其他的支持网卡，详见此链接：https://github.com/laobamac/itlwm/releases）|
+| 无线网卡 | Intel 6E AX211 | ✅ | AirportItlwm / itlwm（二选一）+ 蓝牙三件套 （型号为6E的网卡，可以使用itlwm+HeliPort来驱动，若想原生驱动，请更换 intel wifi 6 AX211 或 其他的支持网卡，详见此链接：https://openintelwireless.github.io/itlwm/Compat.html|
 | 蓝牙 | Intel（AX211 自带） | ✅  |
 | 硬盘 | NVMe SSD（Windows + macOS 分盘） | ✅  |
-| 触摸板 / 键盘 | ⚠️ 建议禁用内置键盘，使用外接键盘，内置键盘对于黑苹果有冲突，容易重置或刷新屏幕，触摸板暂时无法驱动 |
+| 触摸板 / 键盘 | ⚠️ | 建议禁用内置键盘，使用外接键盘，内置键盘对于黑苹果有冲突，容易重置或刷新屏幕，触摸板暂时无法驱动 |
 | 电池 | 板载 | ✅ |  |
 
 ---
@@ -117,6 +117,8 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 - 生成EFI的工具来自 NullMoth 1401 Windows工具：<https://github.com/nullmoth/1401>
 - itlwm 无线网卡驱动：<https://github.com/laobamac/itlwm/releases>
 - [极光呆呆脑](https://github.com/bilijp153)
+- https://dortania.github.io/- 技术支持与知识库
+- https://github.com/acidanthera- 提供核心驱动开发
 - 本文章大致结构由**豆包姐姐Ai工具**生成
 
 ---
