@@ -2,11 +2,16 @@
 ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 # ROG Strix G16 G614JVR（枪神8）黑苹果 EFI
 
-> 适用机型：ASUS ROG STRIX G16 G614JVR_G614JVR（枪神8） 平台：Raptor Lake-HX（13/14 代酷睿 HX） CPU：英特尔 Core i9-14900HX  
+> 适用机型：ASUS ROG STRIX G16 G614JVR_G614JVR（枪神8） 平台：Raptor Lake-HX（13/14 代酷睿 HX） CPU：英特尔 Core i9-14900HX
+> 
 > GPU：NVIDIA GeForce RTX 4060笔记本 + Intel UHD 显卡（核显）  
-> 系统：macOS Sequoia 15.8
+> 
+> 系统：macOS Sequoia 15.8  
+> 
 > 安装文件为：[HeiPG.cn]Install_macOS_Sequoia_15.8（24H23）_with_OpenCore_1.0.8_Dev_and_FirPE.dmg 可前往 heipg.cn 网站下载（感谢 heipg.cn 提供此镜像）
+> 
 > 引导：OpenCore
+> 
 > 显卡方案：NullMoth（实验性 NVIDIA Metal 驱动）链接：https://github.com/nullmoth/nvidia-macos-driver
 >
 > ⚠️对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。
