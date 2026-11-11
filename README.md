@@ -117,10 +117,10 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 - 生成EFI的工具来自 NullMoth 1401 Windows工具：<https://github.com/nullmoth/1401>
 - itlwm 无线网卡驱动：<https://github.com/laobamac/itlwm/releases>
 - 本作者项目专门解决nkey键盘枚举(https://github.com/Mochen-wu/N-key-infinite-enumeration-reset-malfunction)
-- 感谢显卡kext及pkg的作者：（https://github.com/b00t0x）
-- 显卡kext：(https://github.com/b00t0x/WhateverXe/releases)
-- 显卡pkg：(https://github.com/b00t0x/WhateverXe-Graphics/releases)
-- 在WhateverXe的分支：(https://github.com/Mochen-wu/WhateverXe-G614JVR)
+- [感谢显卡kext及pkg的作者]：(https://github.com/b00t0x)<https://github.com/b00t0x>
+- [显卡kext]：(https://github.com/b00t0x/WhateverXe/releases)
+- [显卡pkg]：(https://github.com/b00t0x/WhateverXe-Graphics/releases)
+- [在WhateverXe的分支]：(https://github.com/Mochen-wu/WhateverXe-G614JVR)
 - [极光呆呆脑](https://github.com/bilijp153) 协助并完善此EFI
 - https://dortania.github.io/- 技术支持与知识库
 - https://github.com/acidanthera- 提供核心驱动开发
