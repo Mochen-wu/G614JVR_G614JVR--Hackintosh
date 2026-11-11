@@ -65,14 +65,14 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 | 主板 | ASUS ROG STRIX G16 G614JVR（HM770 芯片组） | ✅ | Raptor Lake-HX 平台 |
 | CPU | Intel Core i9-14900HX（8P+16E，24核32线程） | ✅ | 需大小核补丁 |
 | 内存 | 板载 + 扩展 DDR5 | ✅ | 视具体配置 |
-| 核显 | Intel UHD Graphics（Raptor Lake） | ⚠️ | 
-| 独显 | NVIDIA GeForce RTX 4060 Laptop | ⚠️ | NullMoth 实验性 Metal 驱动（暂时不建议使用，谨慎使用） |
+| 核显 | Intel UHD Graphics（Raptor Lake） | ✅ | 需借助[WhateverXe]and [WhateverXe Graphics] |
+| 独显 | NVIDIA GeForce RTX 4060 Laptop | ⚠️ | NullMoth 实验性 Metal 驱动（已更新到2.9） |
 | 声卡 | 板载 Realtek（需查具体型号） | ⚠️ | 喇叭无法驱动，仅限耳机可以驱动 |id：21，22，，28，66，99|
 | 有线网卡 | 板载（视型号） | ✅ | RealtekRTL8111  |
 | 无线网卡 | Intel 6E AX211 | ✅ | 
 | 蓝牙 | Intel（AX211 自带） | ✅  |
 | 硬盘 | NVMe SSD（Windows + macOS 分盘） | ✅  |
-| 触摸板 / 键盘 | ASUF1416/未知 | ⚠️ | 触控板可用/建议禁用内置键盘，使用外接键盘，内置键盘对于黑苹果有冲突，容易重置或刷新屏幕，键盘时有时无。 |
+| 触摸板 / 键盘 | ASUF1416/未知 | ✅ | 触控板可用/内置键盘可用（借助NKeyBlocker.kext） |
 | 电池 | 板载 | ✅ |  |
 
 ---
@@ -116,6 +116,11 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 - NullMoth 社区（NVIDIA Metal 实验驱动）：<https://github.com/nullmoth/nvidia-macos-driver>
 - 生成EFI的工具来自 NullMoth 1401 Windows工具：<https://github.com/nullmoth/1401>
 - itlwm 无线网卡驱动：<https://github.com/laobamac/itlwm/releases>
+- 本作者项目专门解决nkey键盘枚举(https://github.com/Mochen-wu/N-key-infinite-enumeration-reset-malfunction)
+- 感谢显卡kext及pkg的作者：（https://github.com/b00t0x）
+- 显卡kext：(https://github.com/b00t0x/WhateverXe/releases)
+- 显卡pkg：(https://github.com/b00t0x/WhateverXe-Graphics/releases)
+- 在WhateverXe的分支：(https://github.com/Mochen-wu/WhateverXe-G614JVR)
 - [极光呆呆脑](https://github.com/bilijp153) 协助并完善此EFI
 - https://dortania.github.io/- 技术支持与知识库
 - https://github.com/acidanthera- 提供核心驱动开发
