@@ -14,11 +14,11 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 > 
 > 引导：OpenCore
 > 
-> <span style="color:red">⚠️ 对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。</span>
+> <span style="color:red">⚠️ 对于实验性 NVIDIA Metal 驱动方案，请谨慎使用此驱动。</span>
 >
-> <span style="color:red">⚠️ 对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。</span>
+> <span style="color:red">⚠️ 对于实验性 NVIDIA Metal 驱动方案，请谨慎使用此驱动。</span>
 >
-> <span style="color:red">⚠️ 对于实验性 NVIDIA Metal 驱动方案，截至2026.10.13为止，暂时不建议使用，有损坏财产风险。因此谨慎使用此驱动。</span>
+> <span style="color:red">⚠️ 对于实验性 NVIDIA Metal 驱动方案，请谨慎使用此驱动。</span>
 >
 > <span style="color:red">**重要事情说三遍！！！重要事情说三遍！！！重要事情说三遍！！！**</span>
 
