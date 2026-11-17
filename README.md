@@ -67,12 +67,12 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 | 内存 | 板载 + 扩展 DDR5 | ✅ | 视具体配置 |
 | 核显 | Intel UHD Graphics（Raptor Lake） | ✅ | 需借助[WhateverXe]and [WhateverXe Graphics] |
 | 独显 | NVIDIA GeForce RTX 4060 Laptop | ⚠️ | NullMoth 实验性 Metal 驱动（已更新到2.9） |
-| 声卡 | 板载 Realtek（需查具体型号） | ⚠️ | 喇叭无法驱动，仅限耳机可以驱动 |id：21，22，，28，66，99|
+| 声卡 | 板载 Realtek（需查具体型号） | ✅  | 喇叭，耳机可以驱动 |id：21，22，，28，66，99|
 | 有线网卡 | 板载（视型号） | ✅ | RealtekRTL8111  |
 | 无线网卡 | Intel 6E AX211 | ✅ | 
 | 蓝牙 | Intel（AX211 自带） | ✅  |
 | 硬盘 | NVMe SSD（Windows + macOS 分盘） | ✅  |
-| 触摸板 / 键盘 | ASUF1416/未知 | ✅ | 触控板可用/内置键盘可用（借助NKeyBlocker.kext） |
+| 触摸板 / 键盘 | ASUF1416/未知 | ✅ | 触控板可用/内置键盘可用（借助NKeyBlocker.kext解决枚举） |
 | 电池 | 板载 | ✅ |  |
 
 ---
@@ -81,7 +81,7 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 
 | 组件 | 版本 / 说明 |
 | ---- | ---- |
-| macOS | Sequoia 15.8 |
+| macOS | tahoe 26.7.3 |
 | OpenCore | 0.9.x / 1.0.x（以仓库内 EFI 为准） |
 | 模拟机型（SMBIOS） | MacBookPro16,2 |
 | 引导模式 | 纯 UEFI
