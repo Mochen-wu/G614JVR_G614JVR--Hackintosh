@@ -107,7 +107,7 @@ A BIOS configuration change will trigger BitLocker recovery lockout.
 - [b00t0x · WhateverXe Series](https://github.com/b00t0x) — iGPU acceleration framework
 - [Mochen-wu · WhateverXe-G614JVR](https://github.com/Mochen-wu/WhateverXe-G614JVR) — Device-specific WhateverXe fork
 - [Mochen-wu · N-key Reset Driver](https://github.com/Mochen-wu/N-key-infinite-enumeration-reset-malfunction) — N-Key enumeration bug fix
-- [AuraPilot / Mac-asus-numberpad-driver](https://github.com/Mochen-wu/AuraPilot-macOS) — ASUS touch numpad daemon
+- [AuraPilot / Mac-asus-numberpad-driver](https://github.com/Mochen-wu/AuraPilot-macOS) — ASUS AuraPilot daemon / lightweight driver available
 - [asus-linux-drivers asus-numberpad-driver](https://github.com/asus-linux-drivers/asus-numberpad-driver) — Original numpad research
 - [Dortania OpenCore Guide](https://dortania.github.io/) — Industry-standard Hackintosh documentation
 - [极光呆呆脑 (bilijp153)](https://github.com/bilijp153) — Testing, tuning & co-development
