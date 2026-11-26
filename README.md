@@ -65,6 +65,9 @@ Add boot arg ` -vi2c-force-polling` to fall back to forced polling mode on deman
 | Keyboard / Trackpad | ASUF1416 / N-Key | ✅ Working | NKeyBlocker.kext resolves infinite enumeration glitch |
 | Touch NumberPad G533 | Embedded touch numpad | ✅ Working | AuraPilot daemon / lightweight driver available |
 | Battery | Internal Smart Battery | ✅ Working | EC battery readout |
+| DP (Thunderbolt 4) | ⚠️ Pending | Await Xe driver maturation or alternative solution |
+| HDMI | ✅ Working | Routed through RTX4060, governed by NullMoth driver |
+| DP (100W PD) | ✅ Working | Routed through RTX4060, governed by NullMoth driver |
 
 ---
 
