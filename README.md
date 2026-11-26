@@ -51,23 +51,24 @@ Add boot arg ` -vi2c-force-polling` to fall back to forced polling mode on deman
 
 ## Hardware Compatibility Matrix
 | Component | Specification | Status | Remarks |
+| 组件 | 规格 | 现状 | 备注 |
 | ---- | ---- | ---- | ---- |
-| Mainboard | ASUS ROG STRIX G16 G614JVR (HM770 PCH) | ✅ Working | Raptor Lake-HX SoC |
-| CPU | Intel Core i9-14900HX (8P+16E, 24C/32T) | ✅ Working | Requires heterogeneous core patch |
-| DRAM | Onboard + SODIMM DDR5 | ✅ Working | Depends on SKU |
-| iGPU | Intel UHD Graphics (Raptor Lake) | ✅ Working | Powered by WhateverXe / WhateverXe-Graphics |
-| dGPU | NVIDIA RTX 4060 Laptop | ⚠️ Experimental | NullMoth Metal Driver v3.1, community-only |
-| Audio | Realtek HDA | ✅ Working | Speaker + Headphone output supported, layout-id: 21,22,28,66,99 |
-| Ethernet | Realtek RTL8111 | ✅ Working | RealtekRTL8111.kext |
-| WLAN | Intel Wi-Fi 6E AX211 | ✅ Working | OpenIntelWireless / itlwm |
-| Bluetooth | Intel AX211 Integrated BT | ✅ Working | OpenIntelWireless |
-| NVMe Storage | PCIe4.0 NVMe SSD | ✅ Working | Dual-boot Windows + macOS |
-| Keyboard / Trackpad | ASUF1416 / N-Key | ✅ Working | NKeyBlocker.kext resolves infinite enumeration glitch |
-| Touch NumberPad G533 | Embedded touch numpad | ✅ Working | AuraPilot daemon / lightweight driver available |
-| Battery | Internal Smart Battery | ✅ Working | EC battery readout |
-| DP (Thunderbolt 4) | Thunderbolt 4 Type-C | ⚠️ Pending | Await Xe driver maturation or alternative solution |
-| HDMI | HDMI Video Output | ✅ Working | Routed through RTX4060, governed by NullMoth driver |
-| DP (100W PD) | Type-C DP + PD Power Delivery | ✅ Working | Routed through RTX4060, governed by NullMoth driver |
+| 主板 | 华硕ROG STRIX G16 G614JVR（HM770 PCH） | ✅ 工作 | Raptor Lake-HX SoC |
+| CPU | 英特尔酷睿 i9-14900HX（8P+16E，24C/32T） | ✅ 工作 | 需要异构核心补丁 |
+| DRAM | 板载 + SODIMM DDR5 | ✅ 工作 | 取决于SKU |
+| iGPU | Intel UHD 显卡（Raptor Lake） | ✅ 工作 | 由 WhateverXe、WhateverXe-Graphics 提供技术支持 |
+| dGPU | NVIDIA RTX 4060 笔记本电脑 | ⚠️实验性 | NullMoth 金属驱动 v3.1，仅限社区使用 |
+| 音频 | Realtek HDA | ✅ 工作 | 支持扬声器 + 耳机输出，布局编号：21,22,28,66,99 |
+| 以太网 | Realtek RTL8111 | ✅ 工作 | RealtekRTL8111.kext |
+| WLAN | Intel Wi-Fi 6E AX211 | ✅ 工作 | OpenIntelWireless / itlwm |
+| 蓝牙 | Intel AX211集成蓝牙 | ✅ 工作 | OpenIntelWireless |
+| NVMe 存储 | PCIe4.0 NVMe SSD | ✅ 工作 | 双启动 Windows + macOS |
+| 键盘 / 触控板 | ASUF1416 / N-Key | ✅ 工作 | NKeyBlocker.kext 解决了无限枚举故障 |
+| 触摸数字键盘 G533 | 内置触摸数字键盘 | ✅ 工作 | AuraPilot 守护进程 / 轻量驱动 |
+| 电池 | 内置智能电池 | ✅ 工作 | EC 电池读数 |
+| DP（雷电4） | 雷霆4型C型 | ⚠️待定 | 等待Xe驱动成熟或替代解决方案 |
+| HDMI | HDMI 视频输出 | ✅ 工作 | 路由RTX4060，由NullMoth驱动控制 |
+| DP（100W PD） | Type-C DP + PD 供电 | ✅ 工作 | 路由RTX4060，由NullMoth驱动控制 |
 
 
 ---
