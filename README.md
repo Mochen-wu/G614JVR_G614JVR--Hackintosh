@@ -51,7 +51,6 @@ Add boot arg ` -vi2c-force-polling` to fall back to forced polling mode on deman
 
 ## Hardware Compatibility Matrix
 | Component | Specification | Status | Remarks |
-| 组件 | 规格 | 现状 | 备注 |
 | ---- | ---- | ---- | ---- |
 | 主板 | 华硕ROG STRIX G16 G614JVR（HM770 PCH） | ✅ 工作 | Raptor Lake-HX SoC |
 | CPU | 英特尔酷睿 i9-14900HX（8P+16E，24C/32T） | ✅ 工作 | 需要异构核心补丁 |
