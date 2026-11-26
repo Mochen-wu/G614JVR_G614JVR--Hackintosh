@@ -43,7 +43,9 @@ Built upon Raptor Lake-HX architecture, this port leverages community experiment
 3. macOS installation will overwrite target storage partitions. **Full data backup is mandatory before any operation.**
 4. On 11th+ Gen Intel ROG notebooks, Resizable BAR / CSM are firmware-hardcoded with no exposed BIOS toggle. Manual intervention is neither required nor available.
 5. DGPU backlight control: Append boot arg `nvrmacpibl=1` to activate backlight regulator for discrete GPU; omit otherwise.
-6. Trackpad instability mitigation: Inject ` -vi2c-force-polling` to enable forced polling mode.
+6. Trackpad instability mitigation: Native perfect interrupt mode is implemented by default.
+Add boot arg ` -vi2c-force-polling` to fall back to forced polling mode on demand.
+
 
 ---
 
