@@ -73,7 +73,7 @@ ROG Strix G16 G614JVR_G614JVR--Raptor Lake-HX-- i9-14900HX--Hackintosh
 | 蓝牙 | Intel（AX211 自带） | ✅  |
 | 硬盘 | NVMe SSD（Windows + macOS 分盘） | ✅  |
 | 触摸板 / 键盘 | ASUF1416/N-key | ✅ | 触控板可用/内置键盘可用（借助NKeyBlocker.kext解决枚举） |
-| 小键盘G533 | 触控版内置 | ✅ | 借助最新版AuraPilot应用程序后台常驻，或使用[精简版]<https://github.com/Mochen-wu/Mac-asus-numberpad-driver> |
+| 小键盘G533 | 触控版内置 | ✅ | 借助最[新版AuraPilot](https://github.com/Mochen-wu/AuraPilot-macOS)应用程序后台常驻，或使用[精简版](https://github.com/Mochen-wu/Mac-asus-numberpad-driver) |
 | 电池 | 板载 | ✅ |  |
 
 ---
