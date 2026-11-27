@@ -101,7 +101,83 @@ If BitLocker encryption is active on your Windows volume, suspend BitLocker or s
 A BIOS configuration change will trigger BitLocker recovery lockout.
 
 ---
+Hide the Thunderbolt "ejectable" icon via DeviceProperties
 
+Problem
+  macOS exposes the Thunderbolt-attached USB controller (Maple Ridge XHCI,
+  8086:1135) as an ejectable PCIe device, so the menu bar shows a USB
+  controller item with two "Eject" entries. Ejecting it tears down the whole
+  Thunderbolt chain — including any USB drive attached to that port.
+
+Fix
+  Inject a DeviceProperties entry for the Thunderbolt root port (any path in
+  the chain works, e.g. PciRoot(0x0)/Pci(0x1A,0x0) for RP25):
+
+      key   : PCI-Thunderbolt
+      type  : Number
+      value : 1
+
+  With this set, the downstream device is published as
+  IOPCITunnelCompatible = Yes instead of IOPCIEjectable = Yes. The ejectable
+  flag is never set, the menu bar item is no longer created, and the port
+  still runs at full speed (verified 10 Gbps with an RTL9210 bridge).
+
+Trade-off — mutually exclusive with NullMoth
+  PCI-Thunderbolt on the root port changes how IOPCIFamily reserves 64-bit
+  prefetchable MMIO windows. On this machine the discrete GPU has only x8
+  lanes, and the shifted allocation order makes the NVIDIA driver fail during
+  init:
+
+      NVRM: _sysCreateOs: RM Access Sys Cap creation failed: 0x56
+
+  followed by a boot loop with no WindowServer (6 boots recorded, none reaching
+  the desktop). Keeping both is therefore not possible today: either the icon
+  goes away, or the NVIDIA driver works. Pick one.
+
+Fallback
+  If the icon must be hidden while keeping NullMoth, do not touch the root
+  port. Use a menu bar manager (Bartender / Ice / Hidden Bar) to hide the item
+  instead, or simply eject through Finder / `diskutil eject`.
+
+
+
+通过 DeviceProperties 隐藏雷电"可弹出"图标
+
+问题
+  挂在雷电口上的 USB 控制器（Maple Ridge XHCI，8086:1135）被 macOS 当成
+  可热插拔的 PCIe 设备，菜单栏会多出一个 USB 控制器项，点开是两个"弹出"。
+  误点会把整条雷电链拔掉，接在该口的 U 盘也跟着掉线。
+
+做法
+  给雷电链上任意一个桥设备注入一条 DeviceProperties（示例为 RP25）：
+
+      键名 : PCI-Thunderbolt
+      类型 : Number
+      值   : 1
+
+  注入后该控制器会以 IOPCITunnelCompatible = Yes 发布，不再标记
+  IOPCIEjectable = Yes，菜单栏那一项就不会生成。通道速度不受影响
+  （配 RTL9210 实测 10Gbps 正常）。
+
+弊端：与 NullMoth 二选一
+  根端口上的 PCI-Thunderbolt 会改变 IOPCIFamily 对 64 位可预取 MMIO 窗口的
+  预留策略。本机独显只有 x8，分配顺序一变，NVIDIA 驱动初始化即失败：
+
+      NVRM: _sysCreateOs: RM Access Sys Cap creation failed: 0x56
+
+  随后进入进不去桌面的重启循环（已记录 6 次启动均无 WindowServer）。
+  也就是说两者目前无法共存，要么图标消失，要么显卡可用，只能选一个。
+
+退路
+  若要保住 NullMoth，就别动根端口，改用菜单栏管理工具
+  （Bartender / Ice / Hidden Bar）把那一项隐藏掉，或拔盘时走
+  Finder 的 ⏏ 与 diskutil eject。
+
+
+
+
+
+---
 ## Credits & Acknowledgements
 - [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg) — The foundation of this bootloader
 - [OpenIntelWireless](https://github.com/OpenIntelWireless) — Intel Wi-Fi & Bluetooth stack
